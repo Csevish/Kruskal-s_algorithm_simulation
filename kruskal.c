@@ -1,4 +1,3 @@
-// gcc -o dijkstra  dijkstra.c  -lGL -lglut -lGLU  -lm -std=c99
 
 #include<GL/glut.h>
 #include<stdio.h>
@@ -6,15 +5,12 @@
 #include<string.h>
 #include<time.h>
 
-//prototype of dijkstra
-void dijkstra();
-
-
 //Window Size
 GLsizei wh = 5000, ww = 5000;
  
 //Used in drawSquare, square length
-//GLfloat size = 3.0;
+//GLfloat size = 3.0;// gcc -o dijkstra  dijkstra.c  -lGL -lglut -lGLU  -lm -std=c99
+
 
 float PI = 3.14285714286;
 
@@ -219,14 +215,6 @@ void drawLine(char color)
 
 	glFlush();
 
-	//write both circles' labels again
-	//writeLabel('A' + lineNodes[0].id, lineNodes[0].xCoordinate - 5, lineNodes[0].yCoordinate - 14);
-	//writeLabel('B' + lineNodes[1].id, lineNodes[1].xCoordinate - 5, lineNodes[1].yCoordinate - 14);
-
-	//glFlush();
-
-	//Display the updated matrix to the console
-
 	if(color == 'N')
 	{
 		printf("\n");
@@ -335,7 +323,7 @@ void myInit()
 //Function to display instructions
 void display_hello()
 {
-	writeDistance("DIJKSTRA'S ALGORITHM SIMULATION", 300, 600);
+	writeDistance("KRUSKAL'S ALGORITHM SIMULATION", 300, 600);
 	writeDistance("Use Mouse Left Button to Create Nodes.", 300, 500);
 	writeDistance("Select any two Nodes to form a Path.", 300, 400);
 	writeDistance("Use Mouse Right Button to select Source and Destrination.", 300, 300);
