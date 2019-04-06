@@ -415,7 +415,7 @@ void Kruskal(){
 	 	}
 
 	}
-	printf("\n\n\tCOST OF MINIMUM SPANNING TREE IS : %d ",mincost);
+	printf("\n\n\tCOST OF MINIMUM SPANNING TREE IS : %d \n",mincost);
 }
 
 
